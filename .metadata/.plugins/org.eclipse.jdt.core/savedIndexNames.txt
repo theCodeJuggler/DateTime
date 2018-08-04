@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\My Programs\Office Assignment\Java\DateTime\.metadata\.plugins\org.eclipse.jdt.core
+2143637096.index
+271159951.index
+3554421627.index

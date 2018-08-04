@@ -1,0 +1,32 @@
+package com.abc.lifetime;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Date;
+
+public class LivingDays {
+
+	// data members to store the day, month and year of a date
+	private int d;
+	private int m;
+	private int y;
+
+	// to initialize the Date instance members
+	public LivingDays(int d, int m, int y)
+	{
+		this.d = d;
+		this.y = y;
+		this.m = m;
+	}
+
+	public int diff(Date date) {
+		int diffAr;
+		LocalDate dateArg = LocalDate.of(date.y, date.m, date.d);
+		LocalDate dateIns = LocalDate.of(y, m, d);
+		Period diff = Period.between(dateArg, dateIns);
+		diffAr = (int) diff.getDays() + diff.getYears() * 365;
+
+		return diffAr;
+	}
+
+}
